@@ -5,6 +5,9 @@ import pandas as pd
 import streamlit as st
 import pickle
 from model import map_encode, feature_scaling, predict
+import warnings
+warnings.filterwarnings('ignore')
+
 
 def install_dependencies():
     subprocess.call(['pip', 'install', '-r', 'requirements.txt'])
